@@ -42,3 +42,7 @@ Route::group(['prefix' => 'master'], function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index');
+// 問題の広場ページ
+Route::get('/exercise', 'ExercisesController@index');
+// カテゴリー別のページを閲覧
+Route::get('/exercise/{id}', 'ExercisesController@show');

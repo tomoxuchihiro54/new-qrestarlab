@@ -8,13 +8,7 @@
 
 @section('content')
 <div class="container">
-  <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-    <nav class="panel panel-default">
-      <h2 class="panel-heading">カテゴリー</h2>
-      <ul class="nav nav-pills nav-stacked">
-      </ul>
-    </nav>
-  </div>
+@include('includes.nav_side')
 </div>
 @endsection
 @section('footer')
